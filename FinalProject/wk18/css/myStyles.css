@@ -1,5 +1,7 @@
-h1, p{
+h1 {
   font-family: Georgia;
+  color: white;
+  font-size: 25pt;
 }
 input.error {
   border: 2px solid red;
@@ -22,4 +24,36 @@ input[type=text]:focus {
 }
 label {
     display: block;
+}
+.head {
+  padding: 20px;
+  background-color: #0e1f16;
+  text-align: center;
+}
+body {
+  background-color: lightgreen;
+}
+img {
+  height: 300px;
+}
+#submit-booking {
+  background: #B9DFFF;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow:none;
+height: 30px;
+}
+#submit-booking:hover {
+  background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow:none;
+}
+ul {
+  border: #234f38 solid 2px;
+  font-size: 20pt;
 }

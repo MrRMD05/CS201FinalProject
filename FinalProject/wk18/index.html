@@ -12,7 +12,10 @@
   <body>
 
     <form class="form">
+    <header class="head">
     <h1>Daproza Subway</h1>
+    <img src="images/SKPtrain.jpg" alt="train">
+    </header>
     <div class="custom-dialog" title="Welcome to my site">
       <p>Welcome to Daproza Subway! Please fill out this form to check in.</p>
     </div>
@@ -42,37 +45,39 @@
 
       <div>
       <fieldset>
-      <label for="from">From</label>
-      <select name="from" id="from">
-        <option>Koblerville</option>
-        <option>Garapan</option>
-        <option>Tanapag</option>
-      </select>
+        <legend>From: </legend>
+        <label for="radio-13">Koblerville</label>
+        <input type="radio" name="radio-4" id="radio-13" class="from-option" value="Koblerville">
+        <label for="radio-14">Garapan</label>
+        <input type="radio" name="radio-4" id="radio-14" class="from-option" value="Garapan">
+        <label for="radio-15">Tanapag</label>
+        <input type="radio" name="radio-4" id="radio-15" class="from-option" value="Tanapag">
       </fieldset>
-      </div>
+    </div>
 
-      <div>
-        <fieldset>
-      <label for="to">Destination</label>
-      <select name="to" id="to">
-        <option>Koblerville</option>
-        <option>Garapan</option>
-        <option>Tanapag</option>
-      </select>
-        </fieldset>
-      </div>
+    <div>
+    <fieldset>
+      <legend>To: </legend>
+      <label for="radio-16">Koblerville</label>
+      <input type="radio" name="radio-5" id="radio-16" class="to-option" value="Koblerville">
+      <label for="radio-17">Garapan</label>
+      <input type="radio" name="radio-5" id="radio-17" class="to-option" value="Garapan">
+      <label for="radio-18">Tanapag</label>
+      <input type="radio" name="radio-5" id="radio-18" class="to-option" value="Tanapag">
+    </fieldset>
+  </div>
 
       <div>
       <fieldset>
         <legend>Sleeper Cabins: </legend>
         <label for="radio-1">1 Bed</label>
-        <input type="radio" name="radio-1" id="radio-1" class="sleeper-option">
+        <input type="radio" name="radio-1" id="radio-1" class="sleeper-option" value="1 Bed">
         <label for="radio-2">2 Bed</label>
-        <input type="radio" name="radio-1" id="radio-2" class="sleeper-option">
+        <input type="radio" name="radio-1" id="radio-2" class="sleeper-option" value="2 Bed">
         <label for="radio-3">3 Bed</label>
-        <input type="radio" name="radio-1" id="radio-3" class="sleeper-option">
+        <input type="radio" name="radio-1" id="radio-3" class="sleeper-option" value="3 Bed">
         <label for="radio-4">4 Bed</label>
-        <input type="radio" name="radio-1" id="radio-4" class="sleeper-option">
+        <input type="radio" name="radio-1" id="radio-4" class="sleeper-option" value="4 Bed">
       </fieldset>
     </div>
 
@@ -80,13 +85,13 @@
     <fieldset>
       <legend>Normal Seating: </legend>
       <label for="radio-5">2 Seater</label>
-      <input type="radio" name="radio-2" id="radio-5" class="seating-option">
+      <input type="radio" name="radio-2" id="radio-5" class="seating-option" value="2 Seater">
       <label for="radio-6">4 Seater</label>
-      <input type="radio" name="radio-2" id="radio-6" class="seating-option">
+      <input type="radio" name="radio-2" id="radio-6" class="seating-option" value="4 Seater">
       <label for="radio-7">6 Seater</label>
-      <input type="radio" name="radio-2" id="radio-7" class="seating-option">
+      <input type="radio" name="radio-2" id="radio-7" class="seating-option" value="6 Seater">
       <label for="radio-8">8 Seater</label>
-      <input type="radio" name="radio-2" id="radio-8" class="seating-option">
+      <input type="radio" name="radio-2" id="radio-8" class="seating-option" value="8 Seater">
     </fieldset>
   </div>
 
@@ -94,13 +99,13 @@
   <fieldset>
     <legend>Food Preference: </legend>
     <label for="radio-9">Chinese Food</label>
-    <input type="radio" name="radio-3" id="radio-9" class="food-option">
+    <input type="radio" name="radio-3" id="radio-9" class="food-option" value="Chinese Food">
     <label for="radio-10">Korean Food</label>
-    <input type="radio" name="radio-3" id="radio-10" class="food-option">
+    <input type="radio" name="radio-3" id="radio-10" class="food-option" value="Korean Food">
     <label for="radio-11">Japanese Food</label>
-    <input type="radio" name="radio-3" id="radio-11" class="food-option">
+    <input type="radio" name="radio-3" id="radio-11" class="food-option" value="Japanese Food">
     <label for="radio-12">Filipino Food</label>
-    <input type="radio" name="radio-3" id="radio-12" class="food-option">
+    <input type="radio" name="radio-3" id="radio-12" class="food-option" value="Filipino Food">
   </fieldset>
 </div>
 

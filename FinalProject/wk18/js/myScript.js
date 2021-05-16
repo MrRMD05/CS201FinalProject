@@ -32,23 +32,29 @@ $(document).ready(function(){
   $("#email").blur(function() {
     booking.email = $("#email").val();
   });
-  $("#from").blur(function() {
-    booking.from = $("#from option:selected").val();
-  });
-
   $("#start-date").datepicker();
   $("#end-date").datepicker().on("change", function(){
     booking.start_date = $("#start-date").val();
     booking.end_date = $("#end-date").val();
+  });
+  $(".from-option").checkboxradio().change(function() {
+    booking.from = $(".from-option:checked").val();
+  });
+  $(".to-option").checkboxradio().change(function() {
+    booking.destination = $(".to-option:checked").val();
+  });
+  $(".sleeper-option").checkboxradio().change(function() {
+    booking.sleeper_cabin = $(".sleeper-option:checked").val();
+  });
+  $(".seating-option").checkboxradio().change(function() {
+    booking.normal_seating = $(".seating-option:checked").val();
+  });
+  $(".food-option").checkboxradio().change(function() {
+    booking.food_preference = $(".food-option:checked").val();
     localStorage.setItem("booking-data", JSON.stringify(booking));
     console.log(localStorage.getItem("booking-data"));
     console.log(JSON.parse(localStorage.getItem("booking-data")));
   });
-  $("#from").selectmenu();
-  $("#to").selectmenu();
-  $(".sleeper-option").checkboxradio();
-  $(".seating-option").checkboxradio();
-  $(".food-option").checkboxradio();
   submitBooking();
 });
 
