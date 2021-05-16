@@ -1,18 +1,22 @@
-.input-focus {
-  background-color: red;
-  font-weight: bold;
+input.error {
+  border: 2px solid red;
 }
 .input {
   background-color: white;
   font-weight: normal;
   padding-right: 10px;
 }
-.input-elments{
-
+.input-elements{
   padding-top:20px;
   padding-right: 20px;
 }
-.myName {
-  color: blue;
-  text-decoration: underline;
+input[type=text]:focus {
+  background-color: lightblue;
+}
+#formErrors {
+  display: none;
+  color: red;
+}
+label {
+      display: block;
 }
