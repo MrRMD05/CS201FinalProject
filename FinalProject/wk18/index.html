@@ -16,45 +16,52 @@
     <div class="custom-dialog" title="Welcome to my site">
       <p>Welcome to Daproza Subway! Please fill out this form to check in.</p>
     </div>
+
     <div class="">
       <div class="input-elements">
         <label for="first-name">First Name: </label>
         <input type="text" id="first-name" placeholder="Please enter first name" class="input" name="first_name" value="">
       </div>
+
       <div class="input-elements">
         <label for="last-name">Last Name: </label>
         <input type="text" id="last-name" placeholder="Please enter last name" class="input" name="last_name" value="">
       </div>
+
       <div class="input-elements">
         <label for="email">Email: </label>
         <input type="text" id="email" placeholder="Please enter email" class="input" name="email" value="">
       </div>
+
       <div class="input-elements">
         <label for="start-date">Start Date:</label>
         <input type="text" id="start-date" placeholder="Please select start date" name="start_date" value="">
         <label for="end-date">End Date: </label>
         <input type="text" id="end-date" placeholder="Please select end date" name="end_date" value="">
       </div>
+
       <div>
       <fieldset>
       <label for="from">From</label>
       <select name="from" id="from">
         <option>Koblerville</option>
-        <option selected="selected">Garapan</option>
+        <option>Garapan</option>
         <option>Tanapag</option>
       </select>
       </fieldset>
       </div>
+
       <div>
         <fieldset>
       <label for="to">Destination</label>
       <select name="to" id="to">
-        <option selected="selected">Koblerville</option>
+        <option>Koblerville</option>
         <option>Garapan</option>
         <option>Tanapag</option>
       </select>
         </fieldset>
       </div>
+
       <div>
       <fieldset>
         <legend>Sleeper Cabins: </legend>
@@ -68,6 +75,7 @@
         <input type="radio" name="radio-1" id="radio-4" class="sleeper-option">
       </fieldset>
     </div>
+
     <div>
     <fieldset>
       <legend>Normal Seating: </legend>
@@ -81,6 +89,7 @@
       <input type="radio" name="radio-2" id="radio-8" class="seating-option">
     </fieldset>
   </div>
+
   <div>
   <fieldset>
     <legend>Food Preference: </legend>
@@ -94,9 +103,7 @@
     <input type="radio" name="radio-3" id="radio-12" class="food-option">
   </fieldset>
 </div>
-  <div>
 
-  </div>
     </div>
     <input type="button" id="submit-booking" value="Submit">
     <div id="formErrors"></div>

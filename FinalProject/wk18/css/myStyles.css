@@ -1,3 +1,6 @@
+h1, p{
+  font-family: Georgia;
+}
 input.error {
   border: 2px solid red;
 }
@@ -7,7 +10,7 @@ input.error {
   padding-right: 10px;
 }
 .input-elements{
-  padding-top:20px;
+  padding-top: 20px;
   padding-right: 20px;
 }
 input[type=text]:focus {
@@ -18,5 +21,5 @@ input[type=text]:focus {
   color: red;
 }
 label {
-      display: block;
+    display: block;
 }

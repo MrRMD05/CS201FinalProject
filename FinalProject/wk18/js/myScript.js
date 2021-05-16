@@ -31,8 +31,10 @@ $(document).ready(function(){
   });
   $("#email").blur(function() {
     booking.email = $("#email").val();
-  })
-  submitBooking();
+  });
+  $("#from").blur(function() {
+    booking.from = $("#from option:selected").val();
+  });
 
   $("#start-date").datepicker();
   $("#end-date").datepicker().on("change", function(){
@@ -47,6 +49,7 @@ $(document).ready(function(){
   $(".sleeper-option").checkboxradio();
   $(".seating-option").checkboxradio();
   $(".food-option").checkboxradio();
+  submitBooking();
 });
 
 function submitBooking(){
